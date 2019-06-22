@@ -764,7 +764,7 @@ do
 	uuid_fie=$(uuidgen)
 	new_name=${uuid_fie}.jpg
 	mv $i $new_name
-	exiftool $new_name -imageuniqueid=${uuid_fie}
+	../exiftool $new_name -imageuniqueid=${uuid_fie}
 	echo $i
 done
 
